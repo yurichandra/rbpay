@@ -4,7 +4,7 @@ require 'rbpay/xendit/client'
 require 'spec_helper'
 
 RSpec.describe Xendit::Client do
-  let(:api_key) { 'xnd_development_2R38G6PSIzikkB66oIzJQqgkxdDEGWQZhFBCmwUOrpdTQMkP9Z0r8Zub4QTMn' }
+  let(:api_key) { 'API_KEY' }
   let(:default_base_url) { 'https://api.xendit.co/v2/' }
 
   subject { described_class.new(api_key: api_key) }
