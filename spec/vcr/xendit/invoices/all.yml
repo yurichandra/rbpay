@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.xendit.co/v2/invoices
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Basic <API_KEY>
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, proxy-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 20 Apr 2021 14:37:01 GMT
+      Etag:
+      - W/"1737-Cz+QVF+3Sa8lhb9VUg9AEgKremg"
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=2592000; includeSubDomains
+      Surrogate-Control:
+      - no-store
+      Content-Length:
+      - '5943'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - nlbi_2182539=5lzXWa8wbVA5MupTjjCKbQAAAAB1nO/jd6I/1ncg5IPPPrSU; path=/; Domain=.xendit.co,
+        visid_incap_2182539=r8auRmWfSGai1OflJ0zRlgznfmAAAAAAQUIPAAAAAADBHMRaArtA54szkIROe345;
+        expires=Tue, 19 Apr 2022 18:10:08 GMT; HttpOnly; path=/; Domain=.xendit.co,
+        incap_ses_1138_2182539=foaKE+VhzRlmwywGNf3KDwznfmAAAAAAUbthqR1TG6nh4joRgNJQtA==;
+        path=/; Domain=.xendit.co
+      X-Cdn:
+      - Imperva
+      X-Iinfo:
+      - 6-13427408-13426318 pNNN RT(1618929419755 75) q(0 0 0 -1) r(4 4) U16
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"6066ec6d869ebf6342607234","external_id":"TEST001","user_id":"60633cdb755efa40780d1307","status":"EXPIRED","merchant_name":"yurichandra.me","merchant_profile_picture_url":"https://du8nwjtfkinx.cloudfront.net/xendit.png","amount":20000,"payer_email":"yurichandra@gmail.com","description":"Test","expiry_date":"2021-04-03T10:05:14.759Z","invoice_url":"https://checkout-staging.xendit.co/web/6066ec6d869ebf6342607234","available_banks":[{"bank_code":"MANDIRI","collection_type":"POOL","bank_account_number":"8860812645361","transfer_amount":20000,"bank_branch":"Virtual
+        Account","account_holder_name":"YURICHANDRA.ME","identity_amount":0},{"bank_code":"BRI","collection_type":"POOL","bank_account_number":"2621533182015","transfer_amount":20000,"bank_branch":"Virtual
+        Account","account_holder_name":"YURICHANDRA.ME","identity_amount":0},{"bank_code":"BNI","collection_type":"POOL","bank_account_number":"880868708687","transfer_amount":20000,"bank_branch":"Virtual
+        Account","account_holder_name":"YURICHANDRA.ME","identity_amount":0},{"bank_code":"PERMATA","collection_type":"POOL","bank_account_number":"821477909793","transfer_amount":20000,"bank_branch":"Virtual
+        Account","account_holder_name":"YURICHANDRA.ME","identity_amount":0},{"bank_code":"BCA","collection_type":"POOL","bank_account_number":"1076648413885","transfer_amount":20000,"bank_branch":"Virtual
+        Account","account_holder_name":"YURICHANDRA.ME","identity_amount":0}],"available_retail_outlets":[{"retail_outlet_name":"ALFAMART","payment_code":"TEST174855","transfer_amount":20000},{"retail_outlet_name":"INDOMARET","payment_code":"TEST100811","transfer_amount":20000}],"available_ewallets":[{"ewallet_type":"OVO"},{"ewallet_type":"DANA"},{"ewallet_type":"SHOPEEPAY"},{"ewallet_type":"LINKAJA"}],"should_exclude_credit_card":false,"should_send_email":false,"created":"2021-04-02T10:05:33.940Z","updated":"2021-04-03T10:05:16.319Z","currency":"IDR"},{"id":"6066e066869ebf63426071e4","external_id":"INV001","user_id":"60633cdb755efa40780d1307","payment_method":"EWALLET","status":"SETTLED","merchant_name":"yurichandra.me","merchant_profile_picture_url":"https://du8nwjtfkinx.cloudfront.net/xendit.png","amount":10000,"paid_amount":10000,"paid_at":"2021-04-02T10:02:14.180Z","payer_email":"yurichandra@gmail.com","description":"test","expiry_date":"2021-04-03T09:14:14.024Z","invoice_url":"https://checkout-staging.xendit.co/web/6066e066869ebf63426071e4","available_banks":[{"bank_code":"MANDIRI","collection_type":"POOL","bank_account_number":"8860833504550","transfer_amount":10000,"bank_branch":"Virtual
+        Account","account_holder_name":"YURICHANDRA.ME","identity_amount":0},{"bank_code":"BRI","collection_type":"POOL","bank_account_number":"2621554041204","transfer_amount":10000,"bank_branch":"Virtual
+        Account","account_holder_name":"YURICHANDRA.ME","identity_amount":0},{"bank_code":"BNI","collection_type":"POOL","bank_account_number":"880846833511","transfer_amount":10000,"bank_branch":"Virtual
+        Account","account_holder_name":"YURICHANDRA.ME","identity_amount":0},{"bank_code":"PERMATA","collection_type":"POOL","bank_account_number":"821456034617","transfer_amount":10000,"bank_branch":"Virtual
+        Account","account_holder_name":"YURICHANDRA.ME","identity_amount":0},{"bank_code":"BCA","collection_type":"POOL","bank_account_number":"1076654898090","transfer_amount":10000,"bank_branch":"Virtual
+        Account","account_holder_name":"YURICHANDRA.ME","identity_amount":0}],"available_retail_outlets":[{"retail_outlet_name":"ALFAMART","payment_code":"TEST174825","transfer_amount":10000},{"retail_outlet_name":"INDOMARET","payment_code":"TEST100785","transfer_amount":10000}],"available_ewallets":[{"ewallet_type":"OVO"},{"ewallet_type":"DANA"},{"ewallet_type":"SHOPEEPAY"},{"ewallet_type":"LINKAJA"}],"should_exclude_credit_card":false,"adjusted_received_amount":9835,"should_send_email":false,"created":"2021-04-02T09:14:14.199Z","updated":"2021-04-06T18:00:27.391Z","currency":"IDR","payment_channel":"OVO","payment_id":"7a13f074-c330-45a7-85a1-2e9620e43b54"},{"id":"6066cae0869ebf634260715f","external_id":"1001","user_id":"60633cdb755efa40780d1307","status":"EXPIRED","merchant_name":"yurichandra.me","merchant_profile_picture_url":"https://du8nwjtfkinx.cloudfront.net/xendit.png","amount":20000,"payer_email":"yurichandra@gmail.com","description":"Test","expiry_date":"2021-04-02T07:43:53.664Z","invoice_url":"https://checkout-staging.xendit.co/web/6066cae0869ebf634260715f","available_banks":[{"bank_code":"MANDIRI","collection_type":"POOL","bank_account_number":"8860826785532","transfer_amount":20000,"bank_branch":"Virtual
+        Account","account_holder_name":"YURICHANDRA.ME","identity_amount":0},{"bank_code":"BRI","collection_type":"POOL","bank_account_number":"2621556775313","transfer_amount":20000,"bank_branch":"Virtual
+        Account","account_holder_name":"YURICHANDRA.ME","identity_amount":0},{"bank_code":"BNI","collection_type":"POOL","bank_account_number":"880873005144","transfer_amount":20000,"bank_branch":"Virtual
+        Account","account_holder_name":"YURICHANDRA.ME","identity_amount":0},{"bank_code":"PERMATA","collection_type":"POOL","bank_account_number":"821482206250","transfer_amount":20000,"bank_branch":"Virtual
+        Account","account_holder_name":"YURICHANDRA.ME","identity_amount":0},{"bank_code":"BCA","collection_type":"POOL","bank_account_number":"1076652710342","transfer_amount":20000,"bank_branch":"Virtual
+        Account","account_holder_name":"YURICHANDRA.ME","identity_amount":0}],"available_retail_outlets":[{"retail_outlet_name":"ALFAMART","payment_code":"TEST174793","transfer_amount":20000},{"retail_outlet_name":"INDOMARET","payment_code":"TEST100748","transfer_amount":20000}],"available_ewallets":[{"ewallet_type":"OVO"},{"ewallet_type":"DANA"},{"ewallet_type":"SHOPEEPAY"},{"ewallet_type":"LINKAJA"}],"should_exclude_credit_card":false,"should_send_email":false,"created":"2021-04-02T07:42:24.137Z","updated":"2021-04-02T07:43:53.664Z","currency":"IDR"}]'
+  recorded_at: Tue, 20 Apr 2021 14:37:01 GMT
+recorded_with: VCR 6.0.0

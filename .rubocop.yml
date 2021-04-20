@@ -1,0 +1,22 @@
+AllCops:
+  TargetRubyVersion: 2.6.5
+  DisplayCopNames: true
+  SuggestExtensions: false
+  NewCops: enable
+  Exclude:
+    - 'spec/**/*'
+
+Layout/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 15
+
+Style/Documentation:
+  Enabled: false
+
+Style/OptionalBooleanParameter:
+  Enabled: false
+
+Style/StringConcatenation:
+  Enabled: false

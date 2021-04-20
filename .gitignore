@@ -1,0 +1,5 @@
+# Files to ignore
+
+.byebug_history
+Rbpay-0.0.0.gem
+xendit.yaml
